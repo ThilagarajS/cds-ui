@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@wuitk/theme/core/typography/dls-typography';
+// @include dls-typography();
+@import '~@wuitk/theme/fonts/_dls-images.scss';
+@import '~@wuitk/theme/fonts/_dls-social-media.scss';
+@import '~@wuitk/theme/fonts/_dls-images-placeholders.scss';
+@import '~@wuitk/theme/core/reset';
+@import '~@wuitk/theme/dls';
+@import './assets/fonts.scss';
+
+body {
+    font-family: 'centrale-sans-book', sans-serif;
+}

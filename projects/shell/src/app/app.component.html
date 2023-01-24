@@ -1,0 +1,6 @@
+<app-header></app-header>
+<div class="content">
+    <ng-container *ngIf="canShowMFE">
+        <div [appMicroFrontEndCompLoader]="mfeDetail"></div>
+    </ng-container>
+</div>

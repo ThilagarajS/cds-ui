@@ -1,0 +1,58 @@
+<div class="topic-holder">Device Detail</div>
+<div class="device-detail-container">
+    <div class="detail-header"
+        [ngClass]="deviceDetails?.DeviceIntegration?.Devices?.Device?.length > 0 ? 'alert-ind': ''">
+        <em class="fa fa-bell"></em>
+    </div>
+    <div class="progress-ind-container" *ngIf="!canShowDetails">
+        <dls-progress-circular-indeterminate></dls-progress-circular-indeterminate>
+    </div>
+    <diV class="detail-content" *ngIf="canShowDetails">
+        <div class="content-list">
+            <span class="content-type">Equipment Id</span>
+            <span class="content-value"
+                [title]="deviceDetails.DeviceIntegration.Transaction.EquipmentInstanceID">{{deviceDetails.DeviceIntegration.Transaction.EquipmentInstanceID}}</span>
+        </div>
+        <div class="content-list">
+            <span class="content-type">Transaction Timestamp</span>
+            <span class="content-value"
+                [title]="deviceDetails.DeviceIntegration.Transaction.DateTimeOfTransaction">{{deviceDetails.DeviceIntegration.Transaction.DateTimeOfTransaction}}</span>
+        </div>
+        <div class="content-list">
+            <span class="content-type">Patient Id</span>
+            <span class="content-value"
+                [title]="deviceDetails.DeviceIntegration.Transaction.Patient.PatientID">{{deviceDetails.DeviceIntegration.Transaction.Patient.PatientID}}</span>
+        </div>
+        <div class="content-list">
+            <span class="content-type">Patient Name</span>
+            <span class="content-value" [title]="deviceDetails.DeviceIntegration.Transaction.Patient.FirstName + ' ' +
+            deviceDetails.DeviceIntegration.Transaction.Patient.LastName">
+                {{deviceDetails.DeviceIntegration.Transaction.Patient.FirstName ?
+                deviceDetails.DeviceIntegration.Transaction.Patient.FirstName : '' + ' ' +
+                deviceDetails.DeviceIntegration.Transaction.Patient.LastName?
+                deviceDetails.DeviceIntegration.Transaction.Patient.LastName : ''}}</span>
+        </div>
+        <div class="content-list">
+            <span class="content-type">DOB</span>
+            <span class="content-value"
+                [title]="deviceDetails.DeviceIntegration.Transaction.Patient?.DOB?.split(' ')[0]">{{deviceDetails.DeviceIntegration.Transaction.Patient?.DOB?.split('
+                ')[0]}}</span>
+        </div>
+        <div class="content-list">
+            <span class="content-type">{{deviceDetails.DeviceIntegration.Devices.Device[0].Parameters[0].Name}}</span>
+            <span class="content-value">{{deviceDetails.DeviceIntegration.Devices.Device[0].Parameters[0].Value}}</span>
+        </div>
+        <div class="content-list">
+            <span class="content-type">{{deviceDetails.DeviceIntegration.Devices.Device[0].Parameters[1].Name}}</span>
+            <span class="content-value">{{deviceDetails.DeviceIntegration.Devices.Device[0].Parameters[1].Value}}</span>
+        </div>
+        <div class="content-list">
+            <span class="content-type">{{deviceDetails.DeviceIntegration.Devices.Device[0].Parameters[2].Name}}</span>
+            <span class="content-value">{{deviceDetails.DeviceIntegration.Devices.Device[0].Parameters[2].Value}}</span>
+        </div>
+        <div class="content-list">
+            <span class="content-type">{{deviceDetails.DeviceIntegration.Devices.Device[0].Parameters[4].Name}}</span>
+            <span class="content-value">{{deviceDetails.DeviceIntegration.Devices.Device[0].Parameters[4].Value}}</span>
+        </div>
+    </diV>
+</div>

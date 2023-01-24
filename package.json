@@ -6,11 +6,14 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,
   "dependencies": {
+    "@angular-architects/module-federation": "^14.2.3",
     "@angular/animations": "~13.2.0",
+    "@angular/cdk": "^13.2.2",
     "@angular/common": "~13.2.0",
     "@angular/compiler": "~13.2.0",
     "@angular/core": "~13.2.0",
@@ -18,14 +21,28 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "@types/hammerjs": "^2.0.36",
+    "@types/quill": "^1.3.10",
+    "@types/webpack-env": "^1.15.3",
+    "@wuitk/angular": "^13.2.0-alpha.2a2db0d0",
+    "@wuitk/core": "^13.2.0-alpha.2a2db0d0",
+    "font-awesome": "^4.7.0",
+    "hammerjs": "^2.0.8",
+    "lodash": "^4.17.21",
+    "primeicons": "^5.0.0",
+    "primeng": "^13.2.0",
+    "quill": "^1.3.7",
+    "resize-observer-polyfill": "^1.5.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~13.2.6",
     "@angular/cli": "~13.2.2",
     "@angular/compiler-cli": "~13.2.0",
     "@types/jasmine": "~3.10.0",
+    "@types/lodash": "^4.14.191",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
@@ -33,6 +50,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ngx-build-plus": "^13.0.1",
     "typescript": "~4.5.2"
   }
 }

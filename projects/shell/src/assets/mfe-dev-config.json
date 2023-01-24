@@ -1,0 +1,11 @@
+{
+    "microFrontEnds": [
+        {
+            "remoteUrl": "http://localhost:3300",
+            "path": "/device.js",
+            "name": "device",
+            "component": "DeviceDetailsComponent",
+            "publicPathWindowObject": "deviceMFE"
+        }
+    ]
+}

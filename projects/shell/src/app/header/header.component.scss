@@ -1,0 +1,16 @@
+.header-container {
+    display: flex;
+    background: linear-gradient(135deg, #1c315f 0%, #158ec0 100%);
+    position: fixed;
+    width: -webkit-fill-available;
+    height: 46px;
+    align-items: center;
+    top: 0;
+
+    .app-title {
+        color: white;
+        padding: 0 1rem;
+        font-size: 20px;
+        font-family: 'centrale-sans-bold', sans-serif;
+    }
+}
